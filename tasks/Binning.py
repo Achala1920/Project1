@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
  
-df = pd.read_csv("cardiovascular_dataset.csv")
+df = pd.read_csv("../data/cardiovascular_dataset.csv")
 print(df)
 
 # 1. Distance binning

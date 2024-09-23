@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load the dataset
-df = pd.read_csv("health_data.csv")
+df = pd.read_csv("../data/health_data.csv")
 print(df)
 # Summary statistics
 print("\nSummary Statistics:")
@@ -21,7 +21,7 @@ print(df.dtypes)
 #Converting data[age]
 df['age'] = (df['age'] / 365).astype(int)
 print(df)
-df.to_csv("cardiovascular_dataset.csv")
+df.to_csv("../data/cardiovascular_dataset.csv")
 
 #View all duplicate rows
 duplicates = df.duplicated()

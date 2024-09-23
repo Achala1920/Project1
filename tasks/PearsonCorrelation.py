@@ -3,7 +3,7 @@ from scipy.stats import pearsonr
 from matplotlib import pyplot as plt
 
 # Import your data into Python
-df = pd.read_csv("cardiovascular_dataset.csv")
+df = pd.read_csv("../data/cardiovascular_dataset.csv")
  
 # Convert dataframe into series
 list1 = df['age']
