@@ -29,6 +29,10 @@ duplicate_rows = df[duplicates]
 
 # Print or inspect duplicate rows
 print(duplicate_rows)
+#removes the id column from new csv file and saves it.
+df = df.drop(df.columns[0], axis=1)
+print(df)
+df.to_csv("../data/cardiovascular_dataset.csv")
 
 
 

@@ -5,7 +5,9 @@ import seaborn as sns
 import matplotlib.pyplot as plt
  
 df = pd.read_csv("../data/cardiovascular_dataset.csv")
-df = df.drop('id', axis=1)
+
+df = df.drop(df.columns[0], axis=1)
+df.to_csv("../data/cardiovascular_dataset.csv", index=False)
 print(df)
 
 # Correlation Matrix - Internally uses Pearson Correlation
